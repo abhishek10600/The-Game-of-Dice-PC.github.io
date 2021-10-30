@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  background-color: rgb(241, 243, 126);
+}
+.game {
+  display: flex;
+  border-radius: 2%;
+  margin: 5% 0% 0% 15%;
+  width: 70vw;
+  height: 80vh;
+}
+.btn {
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  padding: 15px 25px 15px 25px;
+  border-radius: 24px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.btn-new-game {
+  /* border-radius: 50%; */
+  position: absolute;
+  left: 45%;
+  top: 126px;
+}
+.dice {
+  position: absolute;
+  left: 45%;
+  top: 235px;
+  width: 500px;
+}
+.diceImage {
+  width: 100px;
+  margin-left: 20px;
+}
+
+.player0 {
+  width: 50%;
+  background-color: rgb(77, 77, 241);
+  font-size: 2rem;
+  border-radius: 24px;
+}
+.player0Details {
+  margin: 20% 0% 0% 30%;
+}
+.player0Score {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: 2%;
+}
+.player0CurrScore {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  width: 15%;
+  height: 20%;
+  background-color: rgb(88, 87, 87);
+  /* margin: 18% 0% 0% 30%;
+  
+  
+  border-radius: 2%; */
+}
+.player0CurrScoreHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+.player0CurrScorePoint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+}
+.player1 {
+  width: 50%;
+  background-color: rgb(238, 63, 63);
+  font-size: 2rem;
+  border-radius: 24px;
+}
+
+.player1Details {
+  margin: 20% 0% 0% 30%;
+  z-index: 1;
+}
+.player1Score {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: 2%;
+}
+.player1CurrScore {
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  width: 15%;
+  height: 20%;
+  background-color: rgb(88, 87, 87);
+  z-index: 1;
+}
+.player1CurrScoreHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+.player1CurrScorePoint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+}
+.rollDice {
+  position: absolute;
+  left: 45%;
+  bottom: 37%;
+}
+.hold {
+  position: absolute;
+  left: 46%;
+  bottom: 25%;
+}
+.hidden {
+  display: none;
+}
+.player-active {
+  opacity: 0.7;
+  z-index: -1;
+}
+.player-winner {
+  background-color: black;
+  color: rgb(245, 148, 110);
+}
